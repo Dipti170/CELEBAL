@@ -1,20 +1,16 @@
-// import logo from './logo.svg';
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Form from './components/Form';
-import Suc from './components/Suc';
+import Success from './components/Success';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Form />} />
-        <Route path="/suc" element={<Suc />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Form />} />
+      <Route path="/success" element={<Success />} />
+    </Routes>
   );
-}
+};
 
 export default App;
 
